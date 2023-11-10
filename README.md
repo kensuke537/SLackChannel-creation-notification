@@ -1,0 +1,2 @@
+# SLackChannel-creation-notification
+Slackに新しいチャンネルが作成されたら、特定のチャンネルにメッセージを送るスクリプト
