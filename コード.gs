@@ -1,3 +1,14 @@
+/////認証用doPost//////
+function doPost(e){
+ const params = JSON.parse(e.postData.getDataAsString());
+
+  if (params.type === "url_verification") {
+    return ContentService.createTextOutput(params.challenge);
+  }
+}
+
+/////チャンネル作成通知されたら読み取るdoPost//////
+
 function doPost(e) {
   var slackVerificationToken = "aaaaaaaabbbbbbbbbbbbbbbb"; // Verification Token
   var slackBotToken = "xoxb-aaaaaaaaaaaaa-bbbbbbbbbbbbb-cccccccccccccccccccccccc"; // SLack Botトークン
