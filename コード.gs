@@ -8,6 +8,9 @@ function doPost(e){
 }
 
 /////チャンネル作成通知されたら読み取るdoPost//////
+/*チャンネル作成されたらdoPostで読み取り,通知を行うスクリプト*/
+
+
 
 function doPost(e) {
   var slackVerificationToken = "aaaaaaaabbbbbbbbbbbbbbbb"; // Verification Token
